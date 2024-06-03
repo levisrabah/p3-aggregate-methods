@@ -1,5 +1,8 @@
 from datetime import datetime
 class Student:
+
+    def course_count(self):
+        return len(self._enrollments)
     def __init__(self, name):
         self.name = name
         self._enrollments = []
